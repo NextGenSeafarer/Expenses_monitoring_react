@@ -1,0 +1,96 @@
+.cost-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    color: white;
+    border-radius: 30px;
+    height: 200px;
+    padding: 0 20px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+}
+.cost-item__date{
+    background-color: transparent;
+    color: white;
+}
+.cost-item__description {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+
+}
+.cost-item__currency {
+    display: flex;
+    align-items: center;
+}
+.cost-item__name {
+    line-height: 2rem;
+    background-color: transparent;
+    max-width: fit-content;
+    color: white;
+    transition: all 0.3s;
+}
+.cost-item__price {
+    font-weight: 600;
+    font-size: 1.4rem;
+    background-color: transparent;
+    width: 120px;
+    transition: all 0.3s;
+    color: white;
+}
+
+.cost-item__name:enabled, .cost-item__price:enabled, .cost-item__date:enabled{
+    background: black;
+    color: #dbbeff;
+    padding: 10px 0;
+}
+
+.button {
+    background-color: transparent;
+    color: white;
+    margin: 3px 0;
+    transition: 0.1s;
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+}
+
+.button__before::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.button-change:before {
+    background-color: #ffee3c;
+}
+
+.button-delete:before {
+    background-color: #ff3c3c;
+}
+
+.button:hover {
+    transform: translateX(-1px);
+    box-shadow: 3px 0 0 rgba(255, 255, 255, 0.75);
+    padding-right: 2px;
+}
+
+@media (max-width: 600px) {
+    .cost-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 2rem;
+    }
+
+    .cost-item__description {
+        align-items: center;
+    }
+
+    .cost-item__name {
+        line-height: 1rem;
+    }
+}

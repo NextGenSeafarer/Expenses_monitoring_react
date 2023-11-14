@@ -1,0 +1,11 @@
+.add_cost {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.add_cost__text {
+    margin: 15px 0;
+}
+.button__add:before{
+    background-color: #6dff6d;
+}

@@ -1,0 +1,44 @@
+.cost_form {
+    flex-direction: column;
+    padding: 10px 0;
+    height: inherit;
+
+}
+
+.form_row {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+.form_row__label {
+    font-weight: 800;
+}
+
+.form_row__input {
+    width: 250px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0 20px;
+    margin: 5px 0;
+    transition: 0.2s;
+
+}
+.form_row__input:focus{
+    box-shadow: 0 0 5px 1px #ffffff;
+
+}
+.buttons_row {
+    display: flex;
+}
+
+.button__form{
+    margin: 5px 20px;
+}
+.button__add:before{
+    background-color: #6dff6d;
+}
+.button__cancel:before{
+    background-color: #7ad5ff;
+}

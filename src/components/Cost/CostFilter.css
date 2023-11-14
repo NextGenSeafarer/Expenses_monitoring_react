@@ -1,0 +1,17 @@
+.cost_filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.cost_filter__select {
+    font-size: 1rem;
+    margin: 20px 0 20px 20px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.45) no-repeat;
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 4px 3px 0 #0000009e;
+    border-radius: 15px 0 15px;
+}
